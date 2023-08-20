@@ -1,0 +1,33 @@
+
+  
+  .slideshow-container {
+    max-width: 1000px; /* Set the width of the slideshow container */
+    max-height: 250px;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 50px;
+    overflow:visible; /* Hide any overflowing content */
+    z-index: 1;
+  }
+  
+  .slides {
+    display: flex; /* Display the images in a row */
+    animation: slideshow 40s linear infinite; /* Change slide every 30 seconds (3 seconds per image) */
+    transition-duration: 0.1s;
+    transform: matrix(100%);
+    height: auto;
+  }
+  
+  @keyframes slideshow {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-250px); } /* Move to the second image */
+    20% { transform: translateX(-500px); } /* Move to the third image */
+    30% { transform: translateX(-750px); } /* Move to the fourth image */
+    40% { transform: translateX(-1000px); } /* Move to the fifth image */
+    50% { transform: translateX(-1250px); } /* Move to the sixth image */
+    60% { transform: translateX(-1500px); } /* Move to the seventh image */
+    70% { transform: translateX(-1750px); } /* Move to the eighth image */
+    80% { transform: translateX(-2000px); } /* Move to the ninth image */
+    90% { transform: translateX(-2250px); } /* Move to the tenth image */
+    100% { transform: translateX(-2500px); } /* Recirculate back to the first image */
+    }

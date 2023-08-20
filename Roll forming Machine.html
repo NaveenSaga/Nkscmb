@@ -1,0 +1,238 @@
+<html>
+<head>
+    <title>Roll Forming Machine</title>
+    <style>
+        body{
+      font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 2000px;
+        width: 1200px;
+        padding-top: 10px;
+        background-color: rgb(228, 233, 233);
+      }
+
+      .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 46px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .thumbnail {
+    width: 150px;
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  .thumbnail:hover {
+    border-color: black;
+    color:s rgb(245, 240, 240);
+    scale: 110%;
+  }
+       .box1{
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 20px;
+          font-weight:bolder;
+          border: 2px solid;
+          border-color: black;
+          margin-left: 10px;
+          width: 500px;
+          }
+  .he1{ 
+      font-weight:bolder; 
+      font-family: 'Times New Roman', Times, serif; 
+      font-size: 30px;
+      align-items: center;
+      text-align: center;
+      
+  }
+  .hbtn{
+            display : flex;
+            align-items: center; 
+            justify-content: center;
+            margin-bottom: 30px; 
+          }
+
+    .homebutton {
+         padding: 30px 20px;
+         background-color: #004851;
+         color: #fff;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         font-size: 20px;
+        }
+
+
+ .homebutton:hover {
+          background-color: #0056b3;
+          }
+
+  .grid1{
+           display:grid;
+           grid-template-columns : 800px 1fr;
+           column-gap: 70px;
+           row-gap: 50px;
+           margin-left:40px;
+           }
+
+    .grid2{
+      display:flex;
+      flex-direction: row;
+      column-gap: 50px;
+      row-gap: 50px;
+      margin-top: 30px;
+      padding-left: 40px;
+      }
+
+      </style>
+
+</head>
+    
+    <body>
+        <div class="hbtn">
+            <a href="index.html">
+                <button class="homebutton">HOME</button>
+            </a>
+
+            
+            
+        </div>
+        <div class="grid1">
+            <div class="hyd press">
+                <div>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail" onclick="currentSlide(1)">
+                          <img src="/250pxmachineimages020823/False Ceilig Channel Roll Forming Machine.jpg" style="width:100%">
+                        </div>
+                        <div class="thumbnail" onclick="currentSlide(2)">
+                          <img src="/250pxmachineimages020823/False ceiling Channel Rool forming Machine.jpg" style="width:100%">
+                        </div>
+                        <div class="thumbnail" onclick="currentSlide(3)">
+                          <img src="/250pxmachineimages020823/Support Channel Roll forming machine1.jpg" style="width:100%">
+                        </div>
+                        <div class="thumbnail" onclick="currentSlide(4)">
+                          <img src="/250pxmachineimages020823/UPVC Roll forming machine.jpg" style="width:100%">
+                        </div>
+                        <!-- Add more thumbnail divs for each image -->
+                      </div>
+                
+                <div class="slideshow-container">
+                  <div class="mySlides">
+                    <img src="/Web Imgs 800px web1/False Ceilig Channel Roll Forming Machine.jpg" style="width: 800px; height:700px;">
+                  </div>
+                
+                  <div class="mySlides">
+                    <img src="/Web Imgs 800px web1/False ceiling Channel Rool forming Machine.jpg" style="width: 800px; height:700px;">
+                  </div>
+                  <div class="mySlides">
+                    <img src="/Web Imgs 800px web1/Support Channel Roll forming machine1.jpg" style="width: 800px; height:700px;">
+                  </div>
+                  <div class="mySlides">
+                    <img src="/Web Imgs 800px web1/UPVC Roll forming machine.jpg" style="width: 800px; height:700px;">
+                  </div>
+                
+                  <!-- Add more mySlides divs for each image -->
+                
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    
+                </div>
+                </div>
+            </div>
+               
+            <div class="box1">
+               <h1 class="he1">
+                ROLL FORMING MACHINE
+               </h1>
+               <p Style="justify-content: center;padding-left: 150px;text-align: left;"> Machine Summary</p>
+               
+               <p>
+                <p style="line-height:2.5;margin-left:10px;">We are Specialised in manufacturing Roll forming Machines. <br> Supplied Roll forming machines for <br>Gas stove frame Support Channel,
+                <br>-GTS Main frame forming machine, <br>-False Ceiling channels,<br>- UPVC ReChannels, etc.,</p>
+                <p style="line-height:2.5;margin-left:10px;"> Machine includes VFD drive, PLC Controller, 
+                    Electrical Panel board, Hydraulic Power Pack for channel cutting. </p>
+           </div>
+            
+        
+        </div>
+        
+            
+        
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let thumbnails = document.getElementsByClassName("thumbnail");
+                
+                  if (n > slides.length) {
+                    slideIndex = 1;
+                  }
+                
+                  if (n < 1) {
+                    slideIndex = slides.length;
+                  }
+                
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                
+                  for (i = 0; i < thumbnails.length; i++) {
+                    thumbnails[i].style.border = "2px solid transparent";
+                  }
+                
+                  slides[slideIndex - 1].style.display = "block";
+                  thumbnails[slideIndex - 1].style.border = "2px solid black";
+                }
+                </script>
+    </body>
+</html>
