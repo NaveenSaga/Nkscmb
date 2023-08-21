@@ -1,15 +1,27 @@
 
     body {
       font-family: Arial, sans-serif;
-      margin: 20px 20px 20px 20px;
+      margin-top:20px;
+      margin-right: 20px;
+      margin-left:20px;
+      margin-bottom:20px;
       padding-right: 50px;
       height: 4000px;
-      width: 1500px;
+      width: 1200px;
       padding-top: 10px;
       background-color: rgb(231, 222, 222);
       overflow-x: hidden;
       
     }
+    /* Default styles for larger screens */
+/* ... */
+
+/* Media query for screens with a maximum width of 768px (typical for mobile phones) */
+@media (max-width: 768px) {
+  /* Adjust styles for mobile screens */
+  /* ... */
+}
+
 
     #navbar {
       display: block;
