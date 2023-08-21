@@ -14,14 +14,7 @@
       
       
     }
-    /* Default styles for larger screens */
-/* ... */
-
-/* Media query for screens with a maximum width of 768px (typical for mobile phones) */
-@media (max-width: 768px) {
-  /* Adjust styles for mobile screens */
-  /* ... */
-}
+    
 
 
     #navbar {
@@ -177,11 +170,11 @@
       .head2{
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
         justify-content: left;
         margin-left:5px;background-color: #004851;
         color: aliceblue;
-        padding-left: 600px;
+        padding-left: 450px;
       }
       .contact-details{
         display: flex;
@@ -233,3 +226,8 @@
       #navbar li:hover #contactus_submenu {
         display: block;
       }
+      @media (max-width: 768px) {
+        /* Adjust styles for mobile screens */
+        /* ... */
+      }
+      
